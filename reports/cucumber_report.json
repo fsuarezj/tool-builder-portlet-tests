@@ -1,0 +1,1760 @@
+[
+  {
+    "id": "navigate-through-steps",
+    "description": "As a user\nI want to be able to navigate through the steps in a given tool instance\nSo that the step of each tool instance is saved",
+    "name": "Navigate through Steps",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 6,
+        "steps": [
+          {
+            "result": {
+              "duration": 1902299262,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 102572007,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2615646841,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2027283936,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "navigate-through-steps;pull-up-one-tool-instance-from-step-1-to-2",
+        "before": [
+          {
+            "result": {
+              "duration": 2671084396,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 55018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 33357,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Pull up one tool instance from step 1 to 2",
+        "keyword": "Scenario",
+        "line": 9,
+        "steps": [
+          {
+            "result": {
+              "duration": 1315305216,
+              "status": "passed"
+            },
+            "name": "the user creates a tool instance called Other Tool Instance",
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 40
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.createNewToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 107032792,
+              "status": "passed"
+            },
+            "name": "she selects the tool instance Other Tool Instance",
+            "keyword": "And ",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 30
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 83593170,
+              "status": "passed"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "When ",
+            "line": 12,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "duration": 79842682,
+              "status": "passed"
+            },
+            "name": "she returns to the Tool Instances Navigation Page",
+            "keyword": "And ",
+            "line": 13,
+            "match": {
+              "location": "ToolInstanceEditSteps.exitToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 133801026,
+              "status": "passed"
+            },
+            "name": "the tool instance called Other Tool Instance is on step 2",
+            "keyword": "Then ",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 25
+                },
+                {
+                  "val": "2",
+                  "offset": 56
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 6,
+        "steps": [
+          {
+            "result": {
+              "duration": 1817040530,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 71568646,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2044665809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2063136990,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "navigate-through-steps;pull-up-one-tool-instance-from-step-2-to-4",
+        "before": [
+          {
+            "result": {
+              "duration": 1947880931,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 17233,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Pull up one tool instance from step 2 to 4",
+        "keyword": "Scenario",
+        "line": 16,
+        "steps": [
+          {
+            "result": {
+              "duration": 71483683,
+              "status": "passed"
+            },
+            "name": "a tool instance called Other Tool Instance exists",
+            "keyword": "Given ",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 116727846,
+              "status": "passed"
+            },
+            "name": "the tool instance called Other Tool Instance is on step 2",
+            "keyword": "And ",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 25
+                },
+                {
+                  "val": "2",
+                  "offset": 56
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 162222798,
+              "status": "passed"
+            },
+            "name": "the user selects the tool instance Other Tool Instance",
+            "keyword": "When ",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 35
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 147860814,
+              "status": "passed"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "And ",
+            "line": 20,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "duration": 75737316,
+              "status": "passed"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "duration": 86103875,
+              "status": "passed"
+            },
+            "name": "she returns to the Tool Instances Navigation Page",
+            "keyword": "And ",
+            "line": 22,
+            "match": {
+              "location": "ToolInstanceEditSteps.exitToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 119975648,
+              "status": "passed"
+            },
+            "name": "the tool instance called Other Tool Instance is on step 4",
+            "keyword": "Then ",
+            "line": 23,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 25
+                },
+                {
+                  "val": "4",
+                  "offset": 56
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 6,
+        "steps": [
+          {
+            "result": {
+              "duration": 2054874667,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 81374209,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2025318092,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2057247934,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "navigate-through-steps;try-to-pull-up-one-tool-instance-above-step-5",
+        "before": [
+          {
+            "result": {
+              "duration": 1954391402,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 22475,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13758,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Try to pull up one tool instance above step 5",
+        "keyword": "Scenario",
+        "line": 25,
+        "steps": [
+          {
+            "result": {
+              "duration": 70788827,
+              "status": "passed"
+            },
+            "name": "a tool instance called Other Tool Instance exists",
+            "keyword": "Given ",
+            "line": 26,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 125377839,
+              "status": "passed"
+            },
+            "name": "the tool instance called Other Tool Instance is on step 4",
+            "keyword": "And ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 25
+                },
+                {
+                  "val": "4",
+                  "offset": 56
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 180539121,
+              "status": "passed"
+            },
+            "name": "the user selects the tool instance Other Tool Instance",
+            "keyword": "When ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 35
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 147038241,
+              "status": "passed"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "And ",
+            "line": 29,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "duration": 87130034,
+              "status": "passed"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "And ",
+            "line": 30,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "duration": 95116248,
+              "status": "passed"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "duration": 92307264,
+              "status": "passed"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "And ",
+            "line": 32,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "duration": 79285529,
+              "status": "passed"
+            },
+            "name": "she returns to the Tool Instances Navigation Page",
+            "keyword": "And ",
+            "line": 33,
+            "match": {
+              "location": "ToolInstanceEditSteps.exitToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 114074040,
+              "status": "passed"
+            },
+            "name": "the tool instance called Other Tool Instance is on step 5",
+            "keyword": "Then ",
+            "line": 34,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 25
+                },
+                {
+                  "val": "5",
+                  "offset": 56
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+            }
+          },
+          {
+            "result": {
+              "duration": 106811704,
+              "status": "passed"
+            },
+            "name": "the user selects the tool instance Other Tool Instance",
+            "keyword": "And ",
+            "line": 35,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 35
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 76921239,
+              "status": "passed"
+            },
+            "name": "she deletes the current tool instance",
+            "keyword": "And ",
+            "line": 36,
+            "match": {
+              "location": "ToolInstanceCommonSteps.deleteToolInstance()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "NavigateThroughSteps.feature"
+  },
+  {
+    "id": "tool-definition-management",
+    "description": "As the admin user\nI want to manage new Tool Definitions in the system\nSo that I can choose them as the system Tool Definition",
+    "name": "Tool Definition Management",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 107581272,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2015646360,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2055646721,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "tool-definition-management;choose-an-existing-tool-definition",
+        "before": [
+          {
+            "result": {
+              "duration": 1957064624,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 21164,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13743,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Choose an existing Tool Definition",
+        "keyword": "Scenario",
+        "line": 6,
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "the admin user is on Tool Builder admin page",
+            "keyword": "Given ",
+            "line": 7,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "a tool definition called Test Tool exists",
+            "keyword": "And ",
+            "line": 8,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "the user selects the Test Tool",
+            "keyword": "When ",
+            "line": 9,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she goes to the Tool Instances Navigation Page",
+            "keyword": "And ",
+            "line": 10,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "the name of the choosen tool definition is Test Tool",
+            "keyword": "Then ",
+            "line": 11,
+            "match": {}
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 128443552,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2086624099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2035568831,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "tool-definition-management;create-a-new-tool-definition",
+        "before": [
+          {
+            "result": {
+              "duration": 1884240852,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 22517,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13277,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Create a new Tool Definition",
+        "keyword": "Scenario",
+        "line": 13,
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "the admin user is on Tool Builder admin page",
+            "keyword": "Given ",
+            "line": 14,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she chooses to create a new tool definition",
+            "keyword": "When ",
+            "line": 15,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she provides the tool definition name as My New Tool Type",
+            "keyword": "And ",
+            "line": 16,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she chooses to have 3 steps",
+            "keyword": "And ",
+            "line": 17,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she chooses a step of type mock for step 1",
+            "keyword": "And ",
+            "line": 18,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she chooses a step of type mock for step 2",
+            "keyword": "And ",
+            "line": 19,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she chooses a step of type mock for step 3",
+            "keyword": "And ",
+            "line": 20,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "she returns to the Tool Definition admin page",
+            "keyword": "And ",
+            "line": 21,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "a tool definition called My New Tool Type exists",
+            "keyword": "Then ",
+            "line": 22,
+            "match": {}
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 70742954,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2018065448,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2059637324,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "tool-definition-management;user-new-tool-definition",
+        "before": [
+          {
+            "result": {
+              "duration": 1925068411,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 19872,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 12349,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "User new Tool Definition",
+        "keyword": "Scenario",
+        "line": 24,
+        "steps": [
+          {
+            "result": {
+              "duration": 1921161528,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 25,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "name": "a tool definition called My New Tool Type exists",
+            "keyword": "And ",
+            "line": 26,
+            "match": {}
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "the user creates a tool instance called My New Def Tool Instance",
+            "keyword": "When ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Def Tool Instance",
+                  "offset": 40
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.createNewToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "she selects the tool instance My New Def Tool Instance",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Def Tool Instance",
+                  "offset": 30
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "When ",
+            "line": 29,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "When ",
+            "line": 30,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "When ",
+            "line": 31,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "she chooses to step forward",
+            "keyword": "When ",
+            "line": 32,
+            "match": {
+              "location": "ToolInstanceCommonSteps.stepForward()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "she returns to the Tool Instances Navigation Page",
+            "keyword": "And ",
+            "line": 33,
+            "match": {
+              "location": "ToolInstanceEditSteps.exitToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "the tool instance called Other Tool Instance is on step 3",
+            "keyword": "Then ",
+            "line": 34,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Other Tool Instance",
+                  "offset": 25
+                },
+                {
+                  "val": "3",
+                  "offset": 56
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "NewToolDef.feature"
+  },
+  {
+    "id": "tool-instance-creation",
+    "description": "As a user\nI want to be able to create new Tool Instance in the system\nSo that I can work with that Tool Instance",
+    "name": "Tool Instance Creation",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 65116238,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2080123126,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2023476786,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "tool-instance-creation;create-a-new-tool-instance",
+        "before": [
+          {
+            "result": {
+              "duration": 1969485289,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 22628,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 26630,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Create a new Tool Instance",
+        "keyword": "Scenario",
+        "line": 6,
+        "steps": [
+          {
+            "result": {
+              "duration": 1958758589,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 132712481,
+              "status": "passed"
+            },
+            "name": "she chooses to create a new tool instance",
+            "keyword": "When ",
+            "line": 8,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.newToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 839583851,
+              "status": "passed"
+            },
+            "name": "she provides the tool instance name as My New Instance",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance",
+                  "offset": 39
+                }
+              ],
+              "location": "ToolInstanceEditSteps.newToolInstanceName(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 93936705,
+              "status": "passed"
+            },
+            "name": "she creates the tool instance",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "ToolInstanceEditSteps.createToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 80768837,
+              "status": "passed"
+            },
+            "name": "she returns to the Tool Instances Navigation Page",
+            "keyword": "And ",
+            "line": 11,
+            "match": {
+              "location": "ToolInstanceEditSteps.exitToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 315092816,
+              "status": "passed"
+            },
+            "name": "a tool instance called My New Instance exists",
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 65766205,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2118868078,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2022770125,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "tool-instance-creation;create-a-new-existing-tool-instance",
+        "before": [
+          {
+            "result": {
+              "duration": 1974135408,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 27061,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 19558,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Create a new existing Tool Instance",
+        "keyword": "Scenario",
+        "line": 14,
+        "steps": [
+          {
+            "result": {
+              "duration": 2018882263,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 15,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 81036373,
+              "status": "passed"
+            },
+            "name": "a tool instance called My New Instance exists",
+            "keyword": "And ",
+            "line": 16,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 91437676,
+              "status": "passed"
+            },
+            "name": "the user chooses to create a new tool instance",
+            "keyword": "When ",
+            "line": 17,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.newToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 563351581,
+              "status": "passed"
+            },
+            "name": "she provides the tool instance name as My New Instance",
+            "keyword": "And ",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance",
+                  "offset": 39
+                }
+              ],
+              "location": "ToolInstanceEditSteps.newToolInstanceName(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 90634226,
+              "status": "passed"
+            },
+            "name": "she creates the tool instance",
+            "keyword": "And ",
+            "line": 19,
+            "match": {
+              "location": "ToolInstanceEditSteps.createToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 284170906,
+              "status": "passed"
+            },
+            "name": "an error message with text \"Existing Tool Instance\" is shown",
+            "keyword": "And ",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Existing Tool Instance",
+                  "offset": 28
+                }
+              ],
+              "location": "ToolInstanceCommonSteps.errorMessageIs(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 228123727,
+              "status": "passed"
+            },
+            "name": "the user provides the tool instance name as My New Instance 2",
+            "keyword": "And ",
+            "line": 21,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance 2",
+                  "offset": 44
+                }
+              ],
+              "location": "ToolInstanceEditSteps.newToolInstanceName(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 94890977,
+              "status": "passed"
+            },
+            "name": "she creates the tool instance",
+            "keyword": "And ",
+            "line": 22,
+            "match": {
+              "location": "ToolInstanceEditSteps.createToolInstance()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 66303876,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2000946814,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2083481167,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "tool-instance-creation;delete-my-new-instance",
+        "before": [
+          {
+            "result": {
+              "duration": 1891095239,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 22004,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 15421,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Delete My New Instance",
+        "keyword": "Scenario",
+        "line": 24,
+        "steps": [
+          {
+            "result": {
+              "duration": 1890512434,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 25,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 71577415,
+              "status": "passed"
+            },
+            "name": "a tool instance called My New Instance exists",
+            "keyword": "And ",
+            "line": 26,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 103780738,
+              "status": "passed"
+            },
+            "name": "the user selects the tool instance My New Instance",
+            "keyword": "When ",
+            "line": 27,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance",
+                  "offset": 35
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 188086378,
+              "status": "passed"
+            },
+            "name": "she deletes the current tool instance",
+            "keyword": "And ",
+            "line": 28,
+            "match": {
+              "location": "ToolInstanceCommonSteps.deleteToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 645751222,
+              "status": "passed"
+            },
+            "name": "a tool instance called My New Instance does not exist",
+            "keyword": "Then ",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.notExistingToolInstance(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "result": {
+              "duration": 65857911,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2087868734,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2056696420,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.afterScenario()"
+            }
+          }
+        ],
+        "id": "tool-instance-creation;delete-my-new-instance",
+        "before": [
+          {
+            "result": {
+              "duration": 2001619210,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceCommonSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 20377,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstancesNavigationSteps.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 12633,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ToolInstanceEditSteps.beforeScenario()"
+            }
+          }
+        ],
+        "description": "",
+        "name": "Delete My New Instance",
+        "keyword": "Scenario",
+        "line": 31,
+        "steps": [
+          {
+            "result": {
+              "duration": 1849226014,
+              "status": "passed"
+            },
+            "name": "the user is on Tool Instances Navigation Page",
+            "keyword": "Given ",
+            "line": 32,
+            "match": {
+              "location": "ToolInstancesNavigationSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 79529018,
+              "status": "passed"
+            },
+            "name": "a tool instance called My New Instance 2 exists",
+            "keyword": "And ",
+            "line": 33,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance 2",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 130810116,
+              "status": "passed"
+            },
+            "name": "the user selects the tool instance My New Instance 2",
+            "keyword": "When ",
+            "line": 34,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance 2",
+                  "offset": 35
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 252657803,
+              "status": "passed"
+            },
+            "name": "she deletes the current tool instance",
+            "keyword": "And ",
+            "line": 35,
+            "match": {
+              "location": "ToolInstanceCommonSteps.deleteToolInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 598427479,
+              "status": "passed"
+            },
+            "name": "a tool instance called My New Instance 2 does not exist",
+            "keyword": "Then ",
+            "line": 36,
+            "match": {
+              "arguments": [
+                {
+                  "val": "My New Instance 2",
+                  "offset": 23
+                }
+              ],
+              "location": "ToolInstancesNavigationSteps.notExistingToolInstance(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "NewToolInstance.feature"
+  }
+]
