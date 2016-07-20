@@ -5,6 +5,7 @@ Feature: Tool Instance Creation
 
 	Scenario: Create a new Tool Instance
 		Given the user is on Tool Instances Navigation Page
+		And she logs in the system as testUser@sharklasers.com with password testPasswd
 		When she chooses to create a new tool instance
 		And she provides the tool instance name as My New Instance
 		And she creates the tool instance
@@ -13,6 +14,7 @@ Feature: Tool Instance Creation
 		
 	Scenario: Create a new existing Tool Instance
 		Given the user is on Tool Instances Navigation Page
+		And she logs in the system as testUser@sharklasers.com with password testPasswd
 		And a tool instance called My New Instance exists
 		When the user chooses to create a new tool instance
 		And she provides the tool instance name as My New Instance
@@ -23,6 +25,7 @@ Feature: Tool Instance Creation
 		
 	Scenario: Delete My New Instance
 		Given the user is on Tool Instances Navigation Page
+		And she logs in the system as testUser@sharklasers.com with password testPasswd
 		And a tool instance called My New Instance exists
 		When the user selects the tool instance My New Instance
 		And she deletes the current tool instance 
@@ -30,6 +33,7 @@ Feature: Tool Instance Creation
 
 	Scenario: Delete My New Instance
 		Given the user is on Tool Instances Navigation Page
+		And she logs in the system as testUser@sharklasers.com with password testPasswd
 		And a tool instance called My New Instance 2 exists
 		When the user selects the tool instance My New Instance 2
 		And she deletes the current tool instance 

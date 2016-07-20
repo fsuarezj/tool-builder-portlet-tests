@@ -20,9 +20,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class AbstractPage {
 
 //	private final static String XPATH_ALERT_MESSAGE = "//*[contains(@id, 'errorMssage')]";
+	private final static String XPATH_LOGIN_FORM = "//form[contains(@id, '_58_fm')]";
+	private final static String XPATH_LOGIN_INPUT = XPATH_LOGIN_FORM + "//*[contains(@id, '_58_login')]";
+	private final static String XPATH_PASSWD_INPUT = XPATH_LOGIN_FORM + "//*[contains(@id, '_58_password')]";
+	private final static String XPATH_LOGIN_BUTTON = XPATH_LOGIN_FORM + "//*[contains(@class, 'btn')]";
 
 //	@FindBy(xpath = XPATH_ALERT_MESSAGE) protected WebElement errorMessage;
 	@FindBy(how = How.CLASS_NAME, using = "portlet-msg-error") private WebElement errorMessage;
+	@FindBy(how = How.CLASS_NAME, using = "sign-in") private WebElement loginBegin;
+	@FindBy(xpath = XPATH_LOGIN_INPUT) protected WebElement loginInput;
+	@FindBy(xpath = XPATH_PASSWD_INPUT) protected WebElement passwdInput;
+	@FindBy(xpath = XPATH_LOGIN_BUTTON) protected WebElement loginButton;
 
 	private final static int TIMEOUT = 30;
 	protected WebDriver driver;
@@ -61,5 +69,15 @@ public abstract class AbstractPage {
 
 	public boolean errorMessageIs(String errorMessage) {
 		return this.errorMessage.getText().equals(errorMessage);
+	}
+
+	public void clickLogIn() {
+		this.loginBegin.click();
+	}
+	
+	public void fillLogin(String login, String passwd) {
+		this.clearAndSetText(loginInput, login);
+		this.clearAndSetText(passwdInput, passwd);
+		this.loginButton.click();
 	}
 }

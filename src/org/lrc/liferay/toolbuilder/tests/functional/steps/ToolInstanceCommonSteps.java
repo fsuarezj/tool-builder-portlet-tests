@@ -24,6 +24,13 @@ public class ToolInstanceCommonSteps {
 		new DriverFactory().destroyDriver();
 	}
 	
+	@When("^(?:she|he|the user) logs in the system as ([^\"]*) with password ([^\"]*)$")
+	public void logIn(String login, String passwd) {
+//		new ToolInstanceCommonPage(this.driver).deleteToolInstance();
+		new ToolInstanceCommonPage(driver).clickLogIn();
+		new ToolInstanceCommonPage(driver).fillLogin(login, passwd);
+	}
+	
 	@When("^(?:she|he|the user) deletes the current tool instance$")
 	public void deleteToolInstance() {
 //		new ToolInstanceCommonPage(this.driver).deleteToolInstance();

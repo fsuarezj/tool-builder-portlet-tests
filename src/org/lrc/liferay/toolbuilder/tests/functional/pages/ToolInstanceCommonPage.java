@@ -41,5 +41,5 @@ public class ToolInstanceCommonPage extends AbstractPage {
 		Thread.sleep(seconds*1000);
 //		new WebDriverWait(this.driver, seconds);
 	}
-
+	
 }
