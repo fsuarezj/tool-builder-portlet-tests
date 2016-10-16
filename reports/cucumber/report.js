@@ -1,755 +1,160 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ChooseToolDef.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("adminPortlet/ChooseToolDef.feature");
 formatter.feature({
-  "id": "choosing-tool-definition",
-  "description": "As the admin user\nI want to choose the Tool Definition for the system\nSo that I can use work with it",
+  "line": 1,
   "name": "Choosing Tool Definition",
-  "keyword": "Feature",
-  "line": 1
+  "description": "As the admin user\nI want to choose the Tool Definition for the system\nSo that I can use work with it",
+  "id": "choosing-tool-definition",
+  "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2556796231,
+  "duration": 853710191,
   "status": "passed"
 });
 formatter.before({
-  "duration": 42477,
+  "duration": 41898,
   "status": "passed"
 });
 formatter.before({
-  "duration": 27950,
+  "duration": 28853,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "choosing-tool-definition;choose-an-existing-tool-definition",
-  "description": "",
+  "line": 6,
   "name": "Choose an existing Tool Definition",
-  "keyword": "Scenario",
-  "line": 6,
-  "type": "scenario"
+  "description": "",
+  "id": "choosing-tool-definition;choose-an-existing-tool-definition",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 7,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 7
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 8,
   "name": "a tool definition called Test Tool exists",
-  "keyword": "And ",
-  "line": 8
+  "keyword": "And "
 });
 formatter.step({
+  "line": 9,
   "name": "the user selects Test Tool as default tool def",
-  "keyword": "When ",
-  "line": 9
+  "keyword": "When "
 });
 formatter.step({
-  "name": "she goes to the Tool Instances Navigation Page",
-  "keyword": "And ",
-  "line": 10
-});
-formatter.step({
-  "name": "the name of the choosen tool definition is Test Tool",
-  "keyword": "Then ",
-  "line": 11
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "duration": 101101171,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2153246796,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2050942206,
-  "status": "passed"
-});
-formatter.uri("NavigateThroughSteps.feature");
-formatter.feature({
-  "id": "navigate-through-steps",
-  "description": "As a user\nI want to be able to navigate through the steps in a given tool instance\nSo that the step of each tool instance is saved",
-  "name": "Navigate through Steps",
-  "keyword": "Feature",
-  "line": 1
-});
-formatter.before({
-  "duration": 1933963458,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 23843,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 16632,
-  "status": "passed"
-});
-formatter.background({
-  "description": "",
-  "name": "",
-  "keyword": "Background",
-  "line": 6,
-  "type": "background"
-});
-formatter.step({
-  "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 7
-});
-formatter.step({
-  "name": "she logs in the system as testUser@sharklasers.com with password testPasswd",
-  "keyword": "And ",
-  "line": 8
-});
-formatter.match({
-  "location": "ToolInstancesNavigationSteps.setup()"
-});
-formatter.result({
-  "duration": 9880141597,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "testUser@sharklasers.com",
-      "offset": 26
-    },
-    {
-      "val": "testPasswd",
-      "offset": 65
-    }
-  ],
-  "location": "ToolInstanceCommonSteps.logIn(String,String)"
-});
-formatter.result({
-  "duration": 7342354129,
-  "status": "passed"
-});
-formatter.scenario({
-  "id": "navigate-through-steps;pull-up-one-tool-instance-from-step-1-to-2",
-  "description": "",
-  "name": "Pull up one tool instance from step 1 to 2",
-  "keyword": "Scenario",
   "line": 10,
-  "type": "scenario"
+  "name": "she goes to the Tool Instances Navigation Page",
+  "keyword": "And "
 });
 formatter.step({
-  "name": "the user creates a tool instance called Other Tool Instance",
-  "keyword": "Given ",
-  "line": 11
+  "line": 11,
+  "name": "the name of the choosen tool definition is Test Tool",
+  "keyword": "Then "
 });
-formatter.step({
-  "name": "she selects the tool instance Other Tool Instance",
-  "keyword": "And ",
-  "line": 12
-});
-formatter.step({
-  "name": "she chooses to step forward",
-  "keyword": "When ",
-  "line": 13
-});
-formatter.step({
-  "name": "she returns to the Tool Instances Navigation Page",
-  "keyword": "And ",
-  "line": 14
-});
-formatter.step({
-  "name": "the tool instance called Other Tool Instance is on step 2",
-  "keyword": "Then ",
-  "line": 15
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 40
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.createNewToolInstance(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1280417514,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 30
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 104133145,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "ToolInstanceCommonSteps.stepForward()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 82525355,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "ToolInstanceEditSteps.exitToolInstance()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 73514893,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 25
-    },
-    {
-      "val": "2",
-      "offset": 56
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 380398600,
+  "status": "undefined"
+});
+formatter.after({
+  "duration": 66306656,
   "status": "passed"
 });
 formatter.after({
-  "duration": 66623836,
+  "duration": 586110585,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2158584129,
+  "duration": 470325357,
   "status": "passed"
 });
-formatter.after({
-  "duration": 2126049769,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 2000420760,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 20691,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 14281,
-  "status": "passed"
-});
-formatter.background({
-  "description": "",
-  "name": "",
-  "keyword": "Background",
-  "line": 6,
-  "type": "background"
-});
-formatter.step({
-  "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 7
-});
-formatter.step({
-  "name": "she logs in the system as testUser@sharklasers.com with password testPasswd",
-  "keyword": "And ",
-  "line": 8
-});
-formatter.match({
-  "location": "ToolInstancesNavigationSteps.setup()"
-});
-formatter.result({
-  "duration": 3921727157,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "testUser@sharklasers.com",
-      "offset": 26
-    },
-    {
-      "val": "testPasswd",
-      "offset": 65
-    }
-  ],
-  "location": "ToolInstanceCommonSteps.logIn(String,String)"
-});
-formatter.result({
-  "duration": 2202691278,
-  "status": "passed"
-});
-formatter.scenario({
-  "id": "navigate-through-steps;pull-up-one-tool-instance-from-step-2-to-4",
-  "description": "",
-  "name": "Pull up one tool instance from step 2 to 4",
-  "keyword": "Scenario",
-  "line": 17,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "a tool instance called Other Tool Instance exists",
-  "keyword": "Given ",
-  "line": 18
-});
-formatter.step({
-  "name": "the tool instance called Other Tool Instance is on step 2",
-  "keyword": "And ",
-  "line": 19
-});
-formatter.step({
-  "name": "the user selects the tool instance Other Tool Instance",
-  "keyword": "When ",
-  "line": 20
-});
-formatter.step({
-  "name": "she chooses to step forward",
-  "keyword": "And ",
-  "line": 21
-});
-formatter.step({
-  "name": "she chooses to step forward",
-  "keyword": "And ",
-  "line": 22
-});
-formatter.step({
-  "name": "she returns to the Tool Instances Navigation Page",
-  "keyword": "And ",
-  "line": 23
-});
-formatter.step({
-  "name": "the tool instance called Other Tool Instance is on step 4",
-  "keyword": "Then ",
-  "line": 24
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 23
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
-});
-formatter.result({
-  "duration": 255156406,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 25
-    },
-    {
-      "val": "2",
-      "offset": 56
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
-});
-formatter.result({
-  "duration": 119101266,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 35
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
-});
-formatter.result({
-  "duration": 127653484,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceCommonSteps.stepForward()"
-});
-formatter.result({
-  "duration": 73323591,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceCommonSteps.stepForward()"
-});
-formatter.result({
-  "duration": 77842734,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceEditSteps.exitToolInstance()"
-});
-formatter.result({
-  "duration": 91388291,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 25
-    },
-    {
-      "val": "4",
-      "offset": 56
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
-});
-formatter.result({
-  "duration": 407415116,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 67838705,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2069727881,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2071002737,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1991185536,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 23161,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 16267,
-  "status": "passed"
-});
-formatter.background({
-  "description": "",
-  "name": "",
-  "keyword": "Background",
-  "line": 6,
-  "type": "background"
-});
-formatter.step({
-  "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 7
-});
-formatter.step({
-  "name": "she logs in the system as testUser@sharklasers.com with password testPasswd",
-  "keyword": "And ",
-  "line": 8
-});
-formatter.match({
-  "location": "ToolInstancesNavigationSteps.setup()"
-});
-formatter.result({
-  "duration": 3761737398,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "testUser@sharklasers.com",
-      "offset": 26
-    },
-    {
-      "val": "testPasswd",
-      "offset": 65
-    }
-  ],
-  "location": "ToolInstanceCommonSteps.logIn(String,String)"
-});
-formatter.result({
-  "duration": 2618292367,
-  "status": "passed"
-});
-formatter.scenario({
-  "id": "navigate-through-steps;try-to-pull-up-one-tool-instance-above-step-5",
-  "description": "",
-  "name": "Try to pull up one tool instance above step 5",
-  "keyword": "Scenario",
-  "line": 26,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "a tool instance called Other Tool Instance exists",
-  "keyword": "Given ",
-  "line": 27
-});
-formatter.step({
-  "name": "the tool instance called Other Tool Instance is on step 4",
-  "keyword": "And ",
-  "line": 28
-});
-formatter.step({
-  "name": "the user selects the tool instance Other Tool Instance",
-  "keyword": "When ",
-  "line": 29
-});
-formatter.step({
-  "name": "she chooses to step forward",
-  "keyword": "And ",
-  "line": 30
-});
-formatter.step({
-  "name": "she chooses to step forward",
-  "keyword": "And ",
-  "line": 31
-});
-formatter.step({
-  "name": "she chooses to step forward",
-  "keyword": "And ",
-  "line": 32
-});
-formatter.step({
-  "name": "she chooses to step forward",
-  "keyword": "And ",
-  "line": 33
-});
-formatter.step({
-  "name": "she returns to the Tool Instances Navigation Page",
-  "keyword": "And ",
-  "line": 34
-});
-formatter.step({
-  "name": "the tool instance called Other Tool Instance is on step 5",
-  "keyword": "Then ",
-  "line": 35
-});
-formatter.step({
-  "name": "the user selects the tool instance Other Tool Instance",
-  "keyword": "And ",
-  "line": 36
-});
-formatter.step({
-  "name": "she deletes the current tool instance",
-  "keyword": "And ",
-  "line": 37
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 23
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
-});
-formatter.result({
-  "duration": 49818717,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 25
-    },
-    {
-      "val": "4",
-      "offset": 56
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
-});
-formatter.result({
-  "duration": 101425458,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 35
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
-});
-formatter.result({
-  "duration": 95159027,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceCommonSteps.stepForward()"
-});
-formatter.result({
-  "duration": 83417337,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceCommonSteps.stepForward()"
-});
-formatter.result({
-  "duration": 72637141,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceCommonSteps.stepForward()"
-});
-formatter.result({
-  "duration": 101284095,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceCommonSteps.stepForward()"
-});
-formatter.result({
-  "duration": 86678915,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceEditSteps.exitToolInstance()"
-});
-formatter.result({
-  "duration": 80625013,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 25
-    },
-    {
-      "val": "5",
-      "offset": 56
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
-});
-formatter.result({
-  "duration": 111234661,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Other Tool Instance",
-      "offset": 35
-    }
-  ],
-  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
-});
-formatter.result({
-  "duration": 101459172,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolInstanceCommonSteps.deleteToolInstance()"
-});
-formatter.result({
-  "duration": 80223010,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 70050743,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2043670050,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2013732340,
-  "status": "passed"
-});
-formatter.uri("NewToolDef.feature");
+formatter.uri("adminPortlet/NewToolDef.feature");
 formatter.feature({
-  "id": "tool-definition-management",
-  "description": "As the admin user\nI want to manage new Tool Definitions in the system\nSo that I can choose them as the system Tool Definition",
+  "line": 1,
   "name": "Tool Definition Management",
-  "keyword": "Feature",
-  "line": 1
+  "description": "As the admin user\nI want to manage new Tool Definitions in the system\nSo that I can choose them as the system Tool Definition",
+  "id": "tool-definition-management",
+  "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1955557217,
+  "duration": 390519063,
   "status": "passed"
 });
 formatter.before({
-  "duration": 24551,
+  "duration": 25558,
   "status": "passed"
 });
 formatter.before({
-  "duration": 16568,
+  "duration": 17783,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;create-a-new-tool-definition",
-  "description": "",
-  "name": "Create a new Tool Definition",
-  "keyword": "Scenario",
   "line": 6,
-  "type": "scenario"
+  "name": "Create a new Tool Definition",
+  "description": "",
+  "id": "tool-definition-management;create-a-new-tool-definition",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 7,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 7
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 8,
   "name": "she chooses to create a new tool definition",
-  "keyword": "When ",
-  "line": 8
+  "keyword": "When "
 });
 formatter.step({
+  "line": 9,
   "name": "she provides the tool definition name as My New Tool Type",
-  "keyword": "And ",
-  "line": 9
+  "keyword": "And "
 });
 formatter.step({
+  "line": 10,
   "name": "she adds a step of type mock for step 1",
-  "keyword": "And ",
-  "line": 10
+  "keyword": "And "
 });
 formatter.step({
+  "line": 11,
   "name": "she adds a step of type mock for step 2",
-  "keyword": "And ",
-  "line": 11
+  "keyword": "And "
 });
 formatter.step({
+  "line": 12,
   "name": "she adds a step of type mock for step 3",
-  "keyword": "And ",
-  "line": 12
+  "keyword": "And "
 });
 formatter.step({
+  "line": 13,
   "name": "she returns to the Tool Definition admin page",
-  "keyword": "And ",
-  "line": 13
+  "keyword": "And "
 });
 formatter.step({
+  "line": 14,
   "name": "a tool definition called My New Tool Type exists",
-  "keyword": "Then ",
-  "line": 14
+  "keyword": "Then "
 });
 formatter.step({
+  "line": 15,
   "name": "the user selects My New Tool Type as default tool def",
-  "keyword": "And ",
-  "line": 15
+  "keyword": "And "
 });
 formatter.match({});
 formatter.result({
@@ -788,92 +193,92 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 125124413,
+  "duration": 114976954,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2102995384,
+  "duration": 517155237,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2200035192,
+  "duration": 522287328,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1993570259,
+  "duration": 404404680,
   "status": "passed"
 });
 formatter.before({
-  "duration": 31841,
+  "duration": 19269,
   "status": "passed"
 });
 formatter.before({
-  "duration": 36610,
+  "duration": 12297,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;use-new-tool-definition",
-  "description": "",
-  "name": "Use new Tool Definition",
-  "keyword": "Scenario",
   "line": 17,
-  "type": "scenario"
+  "name": "Use new Tool Definition",
+  "description": "",
+  "id": "tool-definition-management;use-new-tool-definition",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 18,
   "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 18
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 19,
   "name": "a tool definition called My New Tool Type exists",
-  "keyword": "And ",
-  "line": 19
+  "keyword": "And "
 });
 formatter.step({
+  "line": 20,
   "name": "the user creates a tool instance called My New Def Tool Instance",
-  "keyword": "When ",
-  "line": 20
+  "keyword": "When "
 });
 formatter.step({
+  "line": 21,
   "name": "she selects the tool instance My New Def Tool Instance",
-  "keyword": "And ",
-  "line": 21
+  "keyword": "And "
 });
 formatter.step({
+  "line": 22,
   "name": "she chooses to step forward",
-  "keyword": "When ",
-  "line": 22
+  "keyword": "When "
 });
 formatter.step({
+  "line": 23,
   "name": "she chooses to step forward",
-  "keyword": "When ",
-  "line": 23
+  "keyword": "When "
 });
 formatter.step({
+  "line": 24,
   "name": "she chooses to step forward",
-  "keyword": "When ",
-  "line": 24
+  "keyword": "When "
 });
 formatter.step({
+  "line": 25,
   "name": "she chooses to step forward",
-  "keyword": "When ",
-  "line": 25
+  "keyword": "When "
 });
 formatter.step({
+  "line": 26,
   "name": "she returns to the Tool Instances Navigation Page",
-  "keyword": "And ",
-  "line": 26
+  "keyword": "And "
 });
 formatter.step({
+  "line": 27,
   "name": "the tool instance called Other Tool Instance is on step 3",
-  "keyword": "Then ",
-  "line": 27
+  "keyword": "Then "
 });
 formatter.match({
   "location": "ToolInstancesNavigationSteps.setup()"
 });
 formatter.result({
-  "duration": 3807748722,
+  "duration": 1844147250,
   "status": "passed"
 });
 formatter.match({});
@@ -951,61 +356,61 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 75712046,
+  "duration": 65477012,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2144696261,
+  "duration": 496692734,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2029210079,
+  "duration": 441588226,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1977883666,
+  "duration": 445865905,
   "status": "passed"
 });
 formatter.before({
-  "duration": 23060,
+  "duration": 18242,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15189,
+  "duration": 10453,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;create-an-existing-tool-definition",
-  "description": "",
-  "name": "Create an existing Tool Definition",
-  "keyword": "Scenario",
   "line": 29,
-  "type": "scenario"
+  "name": "Create an existing Tool Definition",
+  "description": "",
+  "id": "tool-definition-management;create-an-existing-tool-definition",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 30,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 30
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 31,
   "name": "a tool definition called My New Tool Type exists",
-  "keyword": "And ",
-  "line": 31
+  "keyword": "And "
 });
 formatter.step({
+  "line": 32,
   "name": "she chooses to create a new tool definition",
-  "keyword": "When ",
-  "line": 32
+  "keyword": "When "
 });
 formatter.step({
+  "line": 33,
   "name": "she provides the tool definition name as My New Tool Type",
-  "keyword": "And ",
-  "line": 33
+  "keyword": "And "
 });
 formatter.step({
+  "line": 34,
   "name": "an error message with text \"Existing Tool Definition\" is shown",
-  "keyword": "Then ",
-  "line": 34
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
@@ -1036,86 +441,86 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 103121875,
+  "duration": 113018369,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2047689180,
+  "duration": 498064657,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2044388179,
+  "duration": 498972646,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2009817202,
+  "duration": 408981743,
   "status": "passed"
 });
 formatter.before({
-  "duration": 22958,
+  "duration": 17814,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15617,
+  "duration": 15034,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;try-to-create-an-existing-tool-definition-and-change-the-name",
-  "description": "",
-  "name": "Try to create an existing Tool Definition and change the name",
-  "keyword": "Scenario",
   "line": 36,
-  "type": "scenario"
+  "name": "Try to create an existing Tool Definition and change the name",
+  "description": "",
+  "id": "tool-definition-management;try-to-create-an-existing-tool-definition-and-change-the-name",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 37,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 37
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 38,
   "name": "a tool definition called My New Tool Type exists",
-  "keyword": "And ",
-  "line": 38
+  "keyword": "And "
 });
 formatter.step({
+  "line": 39,
   "name": "she chooses to create a new tool definition",
-  "keyword": "When ",
-  "line": 39
+  "keyword": "When "
 });
 formatter.step({
+  "line": 40,
   "name": "she provides the tool definition name as My New Tool Type",
-  "keyword": "And ",
-  "line": 40
+  "keyword": "And "
 });
 formatter.step({
+  "line": 41,
   "name": "an error message with text \"Existing Tool Definition\" is shown",
-  "keyword": "And ",
-  "line": 41
+  "keyword": "And "
 });
 formatter.step({
+  "line": 42,
   "name": "she provides the tool definition name as My New Tool Type 2",
-  "keyword": "And ",
-  "line": 42
+  "keyword": "And "
 });
 formatter.step({
+  "line": 43,
   "name": "she adds a step of type mock for step 1",
-  "keyword": "And ",
-  "line": 43
+  "keyword": "And "
 });
 formatter.step({
+  "line": 44,
   "name": "she adds a step of type mock for step 2",
-  "keyword": "And ",
-  "line": 44
+  "keyword": "And "
 });
 formatter.step({
+  "line": 45,
   "name": "she returns to the Tool Definition admin page",
-  "keyword": "And ",
-  "line": 45
+  "keyword": "And "
 });
 formatter.step({
+  "line": 46,
   "name": "a tool definition called My New Tool Type 2 exists",
-  "keyword": "Then ",
-  "line": 46
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
@@ -1166,71 +571,71 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 125377499,
+  "duration": 113396551,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2116989774,
+  "duration": 556280611,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2064356106,
+  "duration": 447288940,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1890786287,
+  "duration": 384786506,
   "status": "passed"
 });
 formatter.before({
-  "duration": 23917,
+  "duration": 25868,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15479,
+  "duration": 17837,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;edit-an-existing-tool-definition",
-  "description": "",
-  "name": "Edit an existing Tool Definition",
-  "keyword": "Scenario",
   "line": 48,
-  "type": "scenario"
+  "name": "Edit an existing Tool Definition",
+  "description": "",
+  "id": "tool-definition-management;edit-an-existing-tool-definition",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 49,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 49
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 50,
   "name": "a tool definition called My New Tool Type 2 exists",
-  "keyword": "And ",
-  "line": 50
+  "keyword": "And "
 });
 formatter.step({
+  "line": 51,
   "name": "the user chooses to edit the tool definition called My New Tool Type 2",
-  "keyword": "Then ",
-  "line": 51
+  "keyword": "Then "
 });
 formatter.step({
+  "line": 52,
   "name": "she adds a step of type mock for step 3",
-  "keyword": "And ",
-  "line": 52
+  "keyword": "And "
 });
 formatter.step({
+  "line": 53,
   "name": "she moves the step 2 to step 3",
-  "keyword": "And ",
-  "line": 53
+  "keyword": "And "
 });
 formatter.step({
+  "line": 54,
   "name": "she returns to the Tool Definition admin page",
-  "keyword": "And ",
-  "line": 54
+  "keyword": "And "
 });
 formatter.step({
+  "line": 55,
   "name": "a tool definition called My New Tool Type 2 exists",
-  "keyword": "Then ",
-  "line": 55
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
@@ -1261,61 +666,61 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 121390259,
+  "duration": 65590444,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2114938559,
+  "duration": 508109504,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2151124689,
+  "duration": 525795579,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1999274377,
+  "duration": 413698073,
   "status": "passed"
 });
 formatter.before({
-  "duration": 20336,
+  "duration": 23276,
   "status": "passed"
 });
 formatter.before({
-  "duration": 13297,
+  "duration": 13551,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;delete-an-existing-tool-definition",
-  "description": "",
-  "name": "Delete an existing Tool Definition",
-  "keyword": "Scenario",
   "line": 57,
-  "type": "scenario"
+  "name": "Delete an existing Tool Definition",
+  "description": "",
+  "id": "tool-definition-management;delete-an-existing-tool-definition",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 58,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 58
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 59,
   "name": "a tool definition called My New Tool Type 2 exists",
-  "keyword": "And ",
-  "line": 59
+  "keyword": "And "
 });
 formatter.step({
+  "line": 60,
   "name": "the user chooses to edit the tool definition called My New Tool Type 2",
-  "keyword": "Then ",
-  "line": 60
+  "keyword": "Then "
 });
 formatter.step({
+  "line": 61,
   "name": "she selects to delete the current tool Definition",
-  "keyword": "And ",
-  "line": 61
+  "keyword": "And "
 });
 formatter.step({
+  "line": 62,
   "name": "a tool definition called My New Tool Type 2 does not exist",
-  "keyword": "Then ",
-  "line": 62
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
@@ -1338,66 +743,66 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 110062217,
+  "duration": 63564806,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2097174063,
+  "duration": 549418561,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2088426141,
+  "duration": 479561944,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2043875147,
+  "duration": 385915518,
   "status": "passed"
 });
 formatter.before({
-  "duration": 27539,
+  "duration": 32733,
   "status": "passed"
 });
 formatter.before({
-  "duration": 20827,
+  "duration": 12427,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;try-to-delete-an-existing-tool-definition-with-tool-instances-associated",
-  "description": "",
-  "name": "Try to delete an existing Tool Definition with tool instances associated",
-  "keyword": "Scenario",
   "line": 64,
-  "type": "scenario"
+  "name": "Try to delete an existing Tool Definition with tool instances associated",
+  "description": "",
+  "id": "tool-definition-management;try-to-delete-an-existing-tool-definition-with-tool-instances-associated",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 65,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 65
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 66,
   "name": "a tool definition called My New Tool Type exists",
-  "keyword": "And ",
-  "line": 66
+  "keyword": "And "
 });
 formatter.step({
+  "line": 67,
   "name": "the user chooses to edit the tool definition called My New Tool Type",
-  "keyword": "When ",
-  "line": 67
+  "keyword": "When "
 });
 formatter.step({
+  "line": 68,
   "name": "she selects to delete the current tool Definition",
-  "keyword": "And ",
-  "line": 68
+  "keyword": "And "
 });
 formatter.step({
+  "line": 69,
   "name": "an error message with text \"This Tool Definition has associated tool instances, please delete the tool instances before deleting this tool definition\" is shown",
-  "keyword": "Then ",
-  "line": 69
+  "keyword": "Then "
 });
 formatter.step({
+  "line": 70,
   "name": "the user cancel the current tool definition edition",
-  "keyword": "And ",
-  "line": 70
+  "keyword": "And "
 });
 formatter.match({});
 formatter.result({
@@ -1432,66 +837,66 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 101029267,
+  "duration": 113099970,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2143870100,
+  "duration": 450437014,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2031187563,
+  "duration": 516482515,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1978995802,
+  "duration": 484564992,
   "status": "passed"
 });
 formatter.before({
-  "duration": 26494,
+  "duration": 21788,
   "status": "passed"
 });
 formatter.before({
-  "duration": 19949,
+  "duration": 13327,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;try-to-edit-an-existing-tool-definition-with-tool-instances-associated",
-  "description": "",
-  "name": "Try to edit an existing Tool Definition with tool instances associated",
-  "keyword": "Scenario",
   "line": 72,
-  "type": "scenario"
+  "name": "Try to edit an existing Tool Definition with tool instances associated",
+  "description": "",
+  "id": "tool-definition-management;try-to-edit-an-existing-tool-definition-with-tool-instances-associated",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 73,
   "name": "the admin user is on Tool Builder admin page",
-  "keyword": "Given ",
-  "line": 73
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 74,
   "name": "a tool definition called My New Tool Type exists",
-  "keyword": "And ",
-  "line": 74
+  "keyword": "And "
 });
 formatter.step({
+  "line": 75,
   "name": "the user chooses to edit the tool definition called My New Tool Type",
-  "keyword": "When ",
-  "line": 75
+  "keyword": "When "
 });
 formatter.step({
+  "line": 76,
   "name": "the user moves the step 2 to step 3",
-  "keyword": "And ",
-  "line": 76
+  "keyword": "And "
 });
 formatter.step({
+  "line": 77,
   "name": "an error message with text \"This Tool Definition has associated tool instances, please delete the tool instances before editing this tool definition\" is shown",
-  "keyword": "Then ",
-  "line": 77
+  "keyword": "Then "
 });
 formatter.step({
+  "line": 78,
   "name": "the user cancel the current tool definition edition",
-  "keyword": "And ",
-  "line": 78
+  "keyword": "And "
 });
 formatter.match({});
 formatter.result({
@@ -1526,107 +931,107 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 145132008,
+  "duration": 112811930,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2128407036,
+  "duration": 507627378,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2100728781,
+  "duration": 542169540,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1988594146,
+  "duration": 453901575,
   "status": "passed"
 });
 formatter.before({
-  "duration": 28795,
+  "duration": 108555,
   "status": "passed"
 });
 formatter.before({
-  "duration": 21205,
+  "duration": 9863,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-definition-management;delete-associated-tool-instances-and-to-delete-an-existing-tool-definition-selected-as-default",
-  "description": "",
-  "name": "Delete associated tool instances and to delete an existing Tool Definition selected as default",
-  "keyword": "Scenario",
   "line": 80,
-  "type": "scenario"
+  "name": "Delete associated tool instances and to delete an existing Tool Definition selected as default",
+  "description": "",
+  "id": "tool-definition-management;delete-associated-tool-instances-and-to-delete-an-existing-tool-definition-selected-as-default",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 81,
   "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 81
+  "keyword": "Given "
 });
 formatter.step({
+  "line": 82,
   "name": "a tool instance called My New Def Tool Instance exists",
-  "keyword": "And ",
-  "line": 82
+  "keyword": "And "
 });
 formatter.step({
+  "line": 83,
   "name": "the user selects the tool instance My New Instance 2",
-  "keyword": "When ",
-  "line": 83
+  "keyword": "When "
 });
 formatter.step({
+  "line": 84,
   "name": "she deletes the current tool instance",
-  "keyword": "And ",
-  "line": 84
+  "keyword": "And "
 });
 formatter.step({
+  "line": 85,
   "name": "the admin user goes to Tool Builder admin page",
-  "keyword": "And ",
-  "line": 85
+  "keyword": "And "
 });
 formatter.step({
+  "line": 86,
   "name": "she chooses to edit the tool definition called My New Tool Type",
-  "keyword": "And ",
-  "line": 86
+  "keyword": "And "
 });
 formatter.step({
+  "line": 87,
   "name": "she selects to delete the current tool Definition",
-  "keyword": "And ",
-  "line": 87
+  "keyword": "And "
 });
 formatter.step({
+  "line": 88,
   "name": "an error message with text \"This Tool Definition is selected as default, please choose other tool definition as default before deleting this one\" is shown",
-  "keyword": "And ",
-  "line": 88
+  "keyword": "And "
 });
 formatter.step({
+  "line": 89,
   "name": "the user cancel the current tool definition edition",
-  "keyword": "And ",
-  "line": 89
+  "keyword": "And "
 });
 formatter.step({
+  "line": 90,
   "name": "the user selects My New Tool Type as default tool def",
-  "keyword": "And ",
-  "line": 90
+  "keyword": "And "
 });
 formatter.step({
+  "line": 91,
   "name": "she chooses to edit the tool definition called My New Tool Type",
-  "keyword": "And ",
-  "line": 91
+  "keyword": "And "
 });
 formatter.step({
+  "line": 92,
   "name": "she selects to delete the current tool Definition",
-  "keyword": "And ",
-  "line": 92
+  "keyword": "And "
 });
 formatter.step({
+  "line": 93,
   "name": "a tool definition called My New Tool Type does not exist",
-  "keyword": "Then ",
-  "line": 93
+  "keyword": "Then "
 });
 formatter.match({
   "location": "ToolInstancesNavigationSteps.setup()"
 });
 formatter.result({
-  "duration": 3722468024,
+  "duration": 1644452697,
   "status": "passed"
 });
 formatter.match({
@@ -1639,9 +1044,9 @@ formatter.match({
   "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
 });
 formatter.result({
-  "duration": 30199434413,
-  "status": "failed",
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat org.lrc.liferay.toolbuilder.tests.functional.steps.ToolInstancesNavigationSteps.existingToolInstance(ToolInstancesNavigationSteps.java:71)\n\tat ✽.And a tool instance called My New Def Tool Instance exists(NewToolDef.feature:82)\n"
+  "duration": 30263546303,
+  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat org.lrc.liferay.toolbuilder.tests.functional.steps.ToolInstancesNavigationSteps.existingToolInstance(ToolInstancesNavigationSteps.java:71)\n\tat ✽.And a tool instance called My New Def Tool Instance exists(adminPortlet/NewToolDef.feature:82)\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1706,270 +1111,757 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 67855179,
+  "duration": 64165853,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2273361533,
+  "duration": 520916655,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2125411274,
+  "duration": 533190972,
   "status": "passed"
 });
-formatter.uri("NewToolInstance.feature");
+formatter.uri("test/test.feature");
 formatter.feature({
-  "id": "tool-instance-creation",
-  "description": "As a user\nI want to be able to create new Tool Instance in the system\nSo that I can work with that Tool Instance",
-  "name": "Tool Instance Creation",
-  "keyword": "Feature",
-  "line": 1
+  "line": 1,
+  "name": "Cases to test the testing environment",
+  "description": "As a user\nI want to blablablabla\nSo that I blabalbla",
+  "id": "cases-to-test-the-testing-environment",
+  "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1927569464,
+  "duration": 385020731,
   "status": "passed"
 });
 formatter.before({
-  "duration": 33967,
+  "duration": 23915,
   "status": "passed"
 });
 formatter.before({
-  "duration": 48007,
+  "duration": 13697,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-instance-creation;create-a-new-tool-instance",
-  "description": "",
-  "name": "Create a new Tool Instance",
-  "keyword": "Scenario",
   "line": 6,
-  "type": "scenario"
+  "name": "Create a new Tool Instance",
+  "description": "",
+  "id": "cases-to-test-the-testing-environment;create-a-new-tool-instance",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 7,
   "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 7
-});
-formatter.step({
-  "name": "she logs in the system as testUser@sharklasers.com with password testPasswd",
-  "keyword": "And ",
-  "line": 8
-});
-formatter.step({
-  "name": "she chooses to create a new tool instance",
-  "keyword": "When ",
-  "line": 9
-});
-formatter.step({
-  "name": "she provides the tool instance name as My New Instance",
-  "keyword": "And ",
-  "line": 10
-});
-formatter.step({
-  "name": "she creates the tool instance",
-  "keyword": "And ",
-  "line": 11
-});
-formatter.step({
-  "name": "she returns to the Tool Instances Navigation Page",
-  "keyword": "And ",
-  "line": 12
-});
-formatter.step({
-  "name": "a tool instance called My New Instance exists",
-  "keyword": "Then ",
-  "line": 13
+  "keyword": "Given "
 });
 formatter.match({
   "location": "ToolInstancesNavigationSteps.setup()"
 });
 formatter.result({
-  "duration": 4022575925,
+  "duration": 1411957323,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 63734792,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 585671825,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 464286251,
+  "status": "passed"
+});
+formatter.uri("toolInstances/NavigateThroughSteps.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Navigate through Steps",
+  "description": "As a user\nI want to be able to navigate through the steps in a given tool instance\nSo that the step of each tool instance is saved",
+  "id": "navigate-through-steps",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 380116425,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 18196,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 8418,
+  "status": "passed"
+});
+formatter.background({
+  "line": 6,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 7,
+  "name": "the user is on Tool Instances Navigation Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "she logs in the system as test@guerrillamail.com with password test",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ToolInstancesNavigationSteps.setup()"
+});
+formatter.result({
+  "duration": 1416301958,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "testUser@sharklasers.com",
+      "val": "test@guerrillamail.com",
       "offset": 26
     },
     {
-      "val": "testPasswd",
-      "offset": 65
+      "val": "test",
+      "offset": 63
     }
   ],
   "location": "ToolInstanceCommonSteps.logIn(String,String)"
 });
 formatter.result({
-  "duration": 7583808138,
+  "duration": 499185059,
   "status": "passed"
 });
+formatter.scenario({
+  "line": 10,
+  "name": "Pull up one tool instance from step 1 to 2",
+  "description": "",
+  "id": "navigate-through-steps;pull-up-one-tool-instance-from-step-1-to-2",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 11,
+  "name": "the user creates a tool instance called Other Tool Instance",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "she selects the tool instance Other Tool Instance",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "she chooses to step forward",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "she returns to the Tool Instances Navigation Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "the tool instance called Other Tool Instance is on step 2",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "ToolInstancesNavigationSteps.newToolInstance()"
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 40
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.createNewToolInstance(String)"
 });
 formatter.result({
-  "duration": 297349750,
+  "duration": 1806486823,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "My New Instance",
-      "offset": 39
+      "val": "Other Tool Instance",
+      "offset": 30
     }
   ],
-  "location": "ToolInstanceEditSteps.newToolInstanceName(String)"
+  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
 });
 formatter.result({
-  "duration": 498477867,
+  "duration": 46450939,
   "status": "passed"
 });
 formatter.match({
-  "location": "ToolInstanceEditSteps.createToolInstance()"
+  "location": "ToolInstanceCommonSteps.stepForward()"
 });
 formatter.result({
-  "duration": 99477135,
+  "duration": 58217839,
   "status": "passed"
 });
 formatter.match({
   "location": "ToolInstanceEditSteps.exitToolInstance()"
 });
 formatter.result({
-  "duration": 76471040,
+  "duration": 30698372,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "My New Instance",
-      "offset": 23
+      "val": "Other Tool Instance",
+      "offset": 25
+    },
+    {
+      "val": "2",
+      "offset": 56
     }
   ],
-  "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
 });
 formatter.result({
-  "duration": 312028635,
+  "duration": 364257548,
   "status": "passed"
 });
 formatter.after({
-  "duration": 70781110,
+  "duration": 64546406,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2154250577,
+  "duration": 3186884188,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2096052099,
+  "duration": 455927149,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1920983482,
+  "duration": 409597242,
   "status": "passed"
 });
 formatter.before({
-  "duration": 24527,
+  "duration": 25465,
   "status": "passed"
 });
 formatter.before({
-  "duration": 17303,
+  "duration": 8046,
   "status": "passed"
 });
-formatter.scenario({
-  "id": "tool-instance-creation;create-a-new-existing-tool-instance",
+formatter.background({
+  "line": 6,
+  "name": "",
   "description": "",
-  "name": "Create a new existing Tool Instance",
-  "keyword": "Scenario",
-  "line": 15,
-  "type": "scenario"
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
+  "line": 7,
   "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 16
+  "keyword": "Given "
 });
 formatter.step({
-  "name": "she logs in the system as testUser@sharklasers.com with password testPasswd",
-  "keyword": "And ",
-  "line": 17
-});
-formatter.step({
-  "name": "a tool instance called My New Instance exists",
-  "keyword": "And ",
-  "line": 18
-});
-formatter.step({
-  "name": "the user chooses to create a new tool instance",
-  "keyword": "When ",
-  "line": 19
-});
-formatter.step({
-  "name": "she provides the tool instance name as My New Instance",
-  "keyword": "And ",
-  "line": 20
-});
-formatter.step({
-  "name": "she creates the tool instance",
-  "keyword": "And ",
-  "line": 21
-});
-formatter.step({
-  "name": "an error message with text \"Existing Tool Instance\" is shown",
-  "keyword": "And ",
-  "line": 22
-});
-formatter.step({
-  "name": "the user provides the tool instance name as My New Instance 2",
-  "keyword": "And ",
-  "line": 23
-});
-formatter.step({
-  "name": "she creates the tool instance",
-  "keyword": "And ",
-  "line": 24
+  "line": 8,
+  "name": "she logs in the system as test@guerrillamail.com with password test",
+  "keyword": "And "
 });
 formatter.match({
   "location": "ToolInstancesNavigationSteps.setup()"
 });
 formatter.result({
-  "duration": 4383168858,
+  "duration": 1658023976,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "testUser@sharklasers.com",
+      "val": "test@guerrillamail.com",
       "offset": 26
     },
     {
-      "val": "testPasswd",
-      "offset": 65
+      "val": "test",
+      "offset": 63
     }
   ],
   "location": "ToolInstanceCommonSteps.logIn(String,String)"
 });
 formatter.result({
-  "duration": 30259851869,
-  "status": "failed",
-  "error_message": "org.openqa.selenium.NoSuchElementException: Timed out after 30 seconds. Unable to locate the element\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1\u0027, time: \u00272016-06-30 17:32:46\u0027\nSystem info: host: \u0027casiopea\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00273.13.0-92-generic\u0027, java.version: \u00271.7.0_101\u0027\nDriver info: driver.version: unknown\n\tat org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:89)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\n\tat org.lrc.liferay.toolbuilder.tests.functional.pages.AbstractPage.clickLogIn(AbstractPage.java:75)\n\tat org.lrc.liferay.toolbuilder.tests.functional.steps.ToolInstanceCommonSteps.logIn(ToolInstanceCommonSteps.java:30)\n\tat ✽.And she logs in the system as testUser@sharklasers.com with password testPasswd(NewToolInstance.feature:17)\nCaused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"class name\",\"selector\":\"sign-in\"}\nCommand duration or timeout: 6 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1\u0027, time: \u00272016-06-30 17:32:46\u0027\nSystem info: host: \u0027casiopea\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00273.13.0-92-generic\u0027, java.version: \u00271.7.0_101\u0027\n*** Element info: {Using\u003dclass name, value\u003dsign-in}\nSession ID: 3c4b80af-e42b-459e-87dd-66a6408497f6\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{platform\u003dLINUX, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dtrue, browserName\u003dfirefox, handlesAlerts\u003dtrue, nativeEvents\u003dfalse, webStorageEnabled\u003dtrue, rotatable\u003dfalse, locationContextEnabled\u003dtrue, applicationCacheEnabled\u003dtrue, takesScreenshot\u003dtrue, version\u003d47.0.1}]\n\tat sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:526)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:391)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$0(AjaxElementLocator.java:1)\n\tat org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:157)\n\tat org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70)\n\tat org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:87)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\n\tat org.lrc.liferay.toolbuilder.tests.functional.pages.AbstractPage.clickLogIn(AbstractPage.java:75)\n\tat org.lrc.liferay.toolbuilder.tests.functional.steps.ToolInstanceCommonSteps.logIn(ToolInstanceCommonSteps.java:30)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\nCaused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"class name\",\"selector\":\"sign-in\"}\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1\u0027, time: \u00272016-06-30 17:32:46\u0027\nSystem info: host: \u0027casiopea\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00273.13.0-92-generic\u0027, java.version: \u00271.7.0_101\u0027\nDriver info: driver.version: unknown\n\tat \u003canonymous class\u003e.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous2410896057496200304webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)\n\tat \u003canonymous class\u003e.FirefoxDriver.prototype.findElement(file:///tmp/anonymous2410896057496200304webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)\n\tat \u003canonymous class\u003e.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous2410896057496200304webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)\n\tat \u003canonymous class\u003e.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous2410896057496200304webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)\n\tat \u003canonymous class\u003e.DelayedCommand.prototype.execute/\u003c(file:///tmp/anonymous2410896057496200304webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)\n"
+  "duration": 462658031,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Pull up one tool instance from step 2 to 4",
+  "description": "",
+  "id": "navigate-through-steps;pull-up-one-tool-instance-from-step-2-to-4",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 18,
+  "name": "a tool instance called Other Tool Instance exists",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "the tool instance called Other Tool Instance is on step 2",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "the user selects the tool instance Other Tool Instance",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 21,
+  "name": "she chooses to step forward",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "she chooses to step forward",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "she returns to the Tool Instances Navigation Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "the tool instance called Other Tool Instance is on step 4",
+  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "My New Instance",
+      "val": "Other Tool Instance",
       "offset": 23
     }
   ],
   "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1855932009,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 25
+    },
+    {
+      "val": "2",
+      "offset": 56
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+});
+formatter.result({
+  "duration": 164640115,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 35
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+});
+formatter.result({
+  "duration": 56659927,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceCommonSteps.stepForward()"
+});
+formatter.result({
+  "duration": 79524807,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceCommonSteps.stepForward()"
+});
+formatter.result({
+  "duration": 22881499,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceEditSteps.exitToolInstance()"
+});
+formatter.result({
+  "duration": 41096851,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 25
+    },
+    {
+      "val": "4",
+      "offset": 56
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+});
+formatter.result({
+  "duration": 457820623,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 64329723,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 481429836,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 544823123,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 378429784,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 17599,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 9103,
+  "status": "passed"
+});
+formatter.background({
+  "line": 6,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 7,
+  "name": "the user is on Tool Instances Navigation Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "she logs in the system as test@guerrillamail.com with password test",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ToolInstancesNavigationSteps.setup()"
+});
+formatter.result({
+  "duration": 1680583533,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "test@guerrillamail.com",
+      "offset": 26
+    },
+    {
+      "val": "test",
+      "offset": 63
+    }
+  ],
+  "location": "ToolInstanceCommonSteps.logIn(String,String)"
+});
+formatter.result({
+  "duration": 495913154,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 26,
+  "name": "Try to pull up one tool instance above step 5",
+  "description": "",
+  "id": "navigate-through-steps;try-to-pull-up-one-tool-instance-above-step-5",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 27,
+  "name": "a tool instance called Other Tool Instance exists",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 28,
+  "name": "the tool instance called Other Tool Instance is on step 4",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "the user selects the tool instance Other Tool Instance",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 30,
+  "name": "she chooses to step forward",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "she chooses to step forward",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 32,
+  "name": "she chooses to step forward",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
+  "name": "she chooses to step forward",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 34,
+  "name": "she returns to the Tool Instances Navigation Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "the tool instance called Other Tool Instance is on step 5",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "the user selects the tool instance Other Tool Instance",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 37,
+  "name": "she deletes the current tool instance",
+  "keyword": "And "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 23
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+});
+formatter.result({
+  "duration": 745860381,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 25
+    },
+    {
+      "val": "4",
+      "offset": 56
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+});
+formatter.result({
+  "duration": 124865932,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 35
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+});
+formatter.result({
+  "duration": 49686356,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceCommonSteps.stepForward()"
+});
+formatter.result({
+  "duration": 73808868,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceCommonSteps.stepForward()"
+});
+formatter.result({
+  "duration": 21492520,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceCommonSteps.stepForward()"
+});
+formatter.result({
+  "duration": 25595050,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceCommonSteps.stepForward()"
+});
+formatter.result({
+  "duration": 24300056,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceEditSteps.exitToolInstance()"
+});
+formatter.result({
+  "duration": 51687837,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 25
+    },
+    {
+      "val": "5",
+      "offset": 56
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.verifyToolInstanceStep(String,int)"
+});
+formatter.result({
+  "duration": 365414155,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Other Tool Instance",
+      "offset": 35
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
+});
+formatter.result({
+  "duration": 42709859,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceCommonSteps.deleteToolInstance()"
+});
+formatter.result({
+  "duration": 52971760,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 64093035,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 558382061,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 526772564,
+  "status": "passed"
+});
+formatter.uri("toolInstances/NewToolInstance.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Tool Instance Creation",
+  "description": "As a user\nI want to be able to create new Tool Instance in the system\nSo that I can work with that Tool Instance",
+  "id": "tool-instance-creation",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 381883868,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 20230,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 9857,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 6,
+  "name": "Create a new Tool Instance",
+  "description": "",
+  "id": "tool-instance-creation;create-a-new-tool-instance",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 7,
+  "name": "the user is on Tool Instances Navigation Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 8,
+  "name": "she logs in the system as test@guerrillamail.com with password test",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "she chooses to create a new tool instance",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "she provides the tool instance name as My New Instance",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "she creates the tool instance",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "she returns to the Tool Instances Navigation Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "a tool instance called My New Instance exists",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ToolInstancesNavigationSteps.setup()"
+});
+formatter.result({
+  "duration": 1619626393,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "test@guerrillamail.com",
+      "offset": 26
+    },
+    {
+      "val": "test",
+      "offset": 63
+    }
+  ],
+  "location": "ToolInstanceCommonSteps.logIn(String,String)"
+});
+formatter.result({
+  "duration": 458602660,
+  "status": "passed"
 });
 formatter.match({
   "location": "ToolInstancesNavigationSteps.newToolInstance()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1087309493,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1981,13 +1873,186 @@ formatter.match({
   "location": "ToolInstanceEditSteps.newToolInstanceName(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 400883768,
+  "status": "passed"
 });
 formatter.match({
   "location": "ToolInstanceEditSteps.createToolInstance()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48310171,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceEditSteps.exitToolInstance()"
+});
+formatter.result({
+  "duration": 49149125,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My New Instance",
+      "offset": 23
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+});
+formatter.result({
+  "duration": 460339043,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 64323433,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 488258987,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 479513524,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 360981132,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 342360,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 238788,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "Create a new existing Tool Instance",
+  "description": "",
+  "id": "tool-instance-creation;create-a-new-existing-tool-instance",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 16,
+  "name": "the user is on Tool Instances Navigation Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 17,
+  "name": "she logs in the system as test@guerrillamail.com with password test",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "a tool instance called My New Instance exists",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "the user chooses to create a new tool instance",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 20,
+  "name": "she provides the tool instance name as My New Instance",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "she creates the tool instance",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "an error message with text \"Existing Tool Instance\" is shown",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "the user provides the tool instance name as My New Instance 2",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "she creates the tool instance",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "she returns to the Tool Instances Navigation Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "a tool instance called My New Instance 2 exists",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ToolInstancesNavigationSteps.setup()"
+});
+formatter.result({
+  "duration": 1605635978,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "test@guerrillamail.com",
+      "offset": 26
+    },
+    {
+      "val": "test",
+      "offset": 63
+    }
+  ],
+  "location": "ToolInstanceCommonSteps.logIn(String,String)"
+});
+formatter.result({
+  "duration": 489363151,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My New Instance",
+      "offset": 23
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+});
+formatter.result({
+  "duration": 707101465,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstancesNavigationSteps.newToolInstance()"
+});
+formatter.result({
+  "duration": 98919353,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My New Instance",
+      "offset": 39
+    }
+  ],
+  "location": "ToolInstanceEditSteps.newToolInstanceName(String)"
+});
+formatter.result({
+  "duration": 343158374,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ToolInstanceEditSteps.createToolInstance()"
+});
+formatter.result({
+  "duration": 50462415,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -1999,7 +2064,8 @@ formatter.match({
   "location": "ToolInstanceCommonSteps.errorMessageIs(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 311462393,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -2011,98 +2077,120 @@ formatter.match({
   "location": "ToolInstanceEditSteps.newToolInstanceName(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 60019592,
+  "status": "passed"
 });
 formatter.match({
   "location": "ToolInstanceEditSteps.createToolInstance()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 49250581,
+  "status": "passed"
 });
-formatter.after({
-  "duration": 65681918,
+formatter.match({
+  "location": "ToolInstanceEditSteps.exitToolInstance()"
+});
+formatter.result({
+  "duration": 45635329,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My New Instance 2",
+      "offset": 23
+    }
+  ],
+  "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
+});
+formatter.result({
+  "duration": 567839751,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2084171259,
+  "duration": 64508377,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2036826076,
+  "duration": 726871040,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 438625387,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1866528046,
+  "duration": 401751154,
   "status": "passed"
 });
 formatter.before({
-  "duration": 449178,
+  "duration": 30657,
   "status": "passed"
 });
 formatter.before({
-  "duration": 364432,
+  "duration": 13492,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-instance-creation;delete-my-new-instance",
-  "description": "",
+  "line": 28,
   "name": "Delete My New Instance",
-  "keyword": "Scenario",
-  "line": 26,
-  "type": "scenario"
+  "description": "",
+  "id": "tool-instance-creation;delete-my-new-instance",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 29,
   "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 27
+  "keyword": "Given "
 });
 formatter.step({
-  "name": "she logs in the system as testUser@sharklasers.com with password testPasswd",
-  "keyword": "And ",
-  "line": 28
+  "line": 30,
+  "name": "she logs in the system as test@guerrillamail.com with password test",
+  "keyword": "And "
 });
 formatter.step({
+  "line": 31,
   "name": "a tool instance called My New Instance exists",
-  "keyword": "And ",
-  "line": 29
+  "keyword": "And "
 });
 formatter.step({
+  "line": 32,
   "name": "the user selects the tool instance My New Instance",
-  "keyword": "When ",
-  "line": 30
+  "keyword": "When "
 });
 formatter.step({
+  "line": 33,
   "name": "she deletes the current tool instance",
-  "keyword": "And ",
-  "line": 31
+  "keyword": "And "
 });
 formatter.step({
+  "line": 34,
   "name": "a tool instance called My New Instance does not exist",
-  "keyword": "Then ",
-  "line": 32
+  "keyword": "Then "
 });
 formatter.match({
   "location": "ToolInstancesNavigationSteps.setup()"
 });
 formatter.result({
-  "duration": 4257208549,
+  "duration": 1977616747,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "testUser@sharklasers.com",
+      "val": "test@guerrillamail.com",
       "offset": 26
     },
     {
-      "val": "testPasswd",
-      "offset": 65
+      "val": "test",
+      "offset": 63
     }
   ],
   "location": "ToolInstanceCommonSteps.logIn(String,String)"
 });
 formatter.result({
-  "duration": 16612394005,
+  "duration": 523588670,
   "status": "passed"
 });
 formatter.match({
@@ -2115,7 +2203,7 @@ formatter.match({
   "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
 });
 formatter.result({
-  "duration": 349380858,
+  "duration": 672461045,
   "status": "passed"
 });
 formatter.match({
@@ -2128,14 +2216,14 @@ formatter.match({
   "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
 });
 formatter.result({
-  "duration": 120793567,
+  "duration": 113070984,
   "status": "passed"
 });
 formatter.match({
   "location": "ToolInstanceCommonSteps.deleteToolInstance()"
 });
 formatter.result({
-  "duration": 103570799,
+  "duration": 74846982,
   "status": "passed"
 });
 formatter.match({
@@ -2148,93 +2236,93 @@ formatter.match({
   "location": "ToolInstancesNavigationSteps.notExistingToolInstance(String)"
 });
 formatter.result({
-  "duration": 654395350,
+  "duration": 618816454,
   "status": "passed"
 });
 formatter.after({
-  "duration": 66503854,
+  "duration": 63956431,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2080567383,
+  "duration": 571902589,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2112056978,
+  "duration": 494749786,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1985774855,
+  "duration": 423305241,
   "status": "passed"
 });
 formatter.before({
-  "duration": 33522,
+  "duration": 15720,
   "status": "passed"
 });
 formatter.before({
-  "duration": 21517,
+  "duration": 9042,
   "status": "passed"
 });
 formatter.scenario({
-  "id": "tool-instance-creation;delete-my-new-instance",
+  "line": 36,
+  "name": "Delete My New Instance 2",
   "description": "",
-  "name": "Delete My New Instance",
-  "keyword": "Scenario",
-  "line": 34,
-  "type": "scenario"
+  "id": "tool-instance-creation;delete-my-new-instance-2",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
+  "line": 37,
   "name": "the user is on Tool Instances Navigation Page",
-  "keyword": "Given ",
-  "line": 35
+  "keyword": "Given "
 });
 formatter.step({
-  "name": "she logs in the system as testUser@sharklasers.com with password testPasswd",
-  "keyword": "And ",
-  "line": 36
+  "line": 38,
+  "name": "she logs in the system as test@guerrillamail.com with password test",
+  "keyword": "And "
 });
 formatter.step({
+  "line": 39,
   "name": "a tool instance called My New Instance 2 exists",
-  "keyword": "And ",
-  "line": 37
+  "keyword": "And "
 });
 formatter.step({
+  "line": 40,
   "name": "the user selects the tool instance My New Instance 2",
-  "keyword": "When ",
-  "line": 38
+  "keyword": "When "
 });
 formatter.step({
+  "line": 41,
   "name": "she deletes the current tool instance",
-  "keyword": "And ",
-  "line": 39
+  "keyword": "And "
 });
 formatter.step({
+  "line": 42,
   "name": "a tool instance called My New Instance 2 does not exist",
-  "keyword": "Then ",
-  "line": 40
+  "keyword": "Then "
 });
 formatter.match({
   "location": "ToolInstancesNavigationSteps.setup()"
 });
 formatter.result({
-  "duration": 4129381269,
+  "duration": 1515689692,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "testUser@sharklasers.com",
+      "val": "test@guerrillamail.com",
       "offset": 26
     },
     {
-      "val": "testPasswd",
-      "offset": 65
+      "val": "test",
+      "offset": 63
     }
   ],
   "location": "ToolInstanceCommonSteps.logIn(String,String)"
 });
 formatter.result({
-  "duration": 11257364135,
+  "duration": 660770428,
   "status": "passed"
 });
 formatter.match({
@@ -2247,9 +2335,8 @@ formatter.match({
   "location": "ToolInstancesNavigationSteps.existingToolInstance(String)"
 });
 formatter.result({
-  "duration": 30107229855,
-  "status": "failed",
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat org.lrc.liferay.toolbuilder.tests.functional.steps.ToolInstancesNavigationSteps.existingToolInstance(ToolInstancesNavigationSteps.java:71)\n\tat ✽.And a tool instance called My New Instance 2 exists(NewToolInstance.feature:37)\n"
+  "duration": 670227746,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -2261,13 +2348,15 @@ formatter.match({
   "location": "ToolInstancesNavigationSteps.selectToolInstance(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 106631504,
+  "status": "passed"
 });
 formatter.match({
   "location": "ToolInstanceCommonSteps.deleteToolInstance()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 69826236,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -2279,18 +2368,19 @@ formatter.match({
   "location": "ToolInstancesNavigationSteps.notExistingToolInstance(String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 69643121,
+  "duration": 573484019,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2203303958,
+  "duration": 64655557,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2104378188,
+  "duration": 505799734,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 521490068,
   "status": "passed"
 });
 });

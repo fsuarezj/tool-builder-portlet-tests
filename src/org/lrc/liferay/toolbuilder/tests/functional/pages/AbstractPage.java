@@ -1,12 +1,6 @@
 package org.lrc.liferay.toolbuilder.tests.functional.pages;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -45,26 +39,35 @@ public abstract class AbstractPage {
 		new WebDriverWait(driver, TIMEOUT).until(ExpectedConditions.visibilityOf(element));
 	}
 
-	protected void TakeScreenShot(RuntimeException e, String fileName) {
-		File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(screenShot, new File(fileName + ".png"));
-		} catch (IOException ioe) {
-			throw new RuntimeException(ioe.getMessage(), ioe);
-		}
-		throw e;
-	}
-	
+//	protected void TakeScreenShot(RuntimeException e, String fileName) {
+//		File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		try {
+//			FileUtils.copyFile(screenShot, new File(fileName + ".png"));
+//		} catch (IOException ioe) {
+//			throw new RuntimeException(ioe.getMessage(), ioe);
+//		}
+//		throw e;
+//	}
+//	
 	protected void clearAndSetText(WebElement element, String text) {
+		System.out.println("Creating Actions");
 		Actions navigator = new Actions(driver);
-		navigator.click(element)
-			.sendKeys(Keys.END)
-			.keyDown(Keys.SHIFT)
-			.sendKeys(Keys.HOME)
-			.keyUp(Keys.SHIFT)
-			.sendKeys(Keys.BACK_SPACE)
-			.sendKeys(text)
-			.perform();
+		System.out.println("Click");
+		navigator.click(element);
+		System.out.println("Key End");
+		navigator.sendKeys(Keys.END);
+		System.out.println("Push Shift");
+		navigator.keyDown(Keys.SHIFT);
+		System.out.println("Key Home");
+		navigator.sendKeys(Keys.HOME);
+		System.out.println("Pull Shift");
+		navigator.keyUp(Keys.SHIFT);
+		System.out.println("Key back_space");
+		navigator.sendKeys(Keys.BACK_SPACE);
+		System.out.println("Keys text");
+		navigator.sendKeys(text);
+		System.out.println("Perform");
+		navigator.perform();
 	}
 
 	public boolean errorMessageIs(String errorMessage) {
@@ -76,8 +79,11 @@ public abstract class AbstractPage {
 	}
 	
 	public void fillLogin(String login, String passwd) {
+		System.out.println("Trying to clear and set text of login");
 		this.clearAndSetText(loginInput, login);
+		System.out.println("Trying to clear and set text of passwd");
 		this.clearAndSetText(passwdInput, passwd);
+		System.out.println("Trying to click login button");
 		this.loginButton.click();
 	}
 }

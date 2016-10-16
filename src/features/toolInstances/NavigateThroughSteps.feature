@@ -5,7 +5,7 @@ Feature: Navigate through Steps
 	
 	Background:
 		Given the user is on Tool Instances Navigation Page
-		And she logs in the system as testUser@sharklasers.com with password testPasswd
+		And she logs in the system as test@guerrillamail.com with password test
 
 	Scenario: Pull up one tool instance from step 1 to 2
 		Given the user creates a tool instance called Other Tool Instance

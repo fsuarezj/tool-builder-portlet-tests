@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 public class ToolInstanceEditPage extends AbstractPage {
 	
 	private final static String TITLE = "Welcome - Mi Sitio";
-//	private final String NAMESPACE = "_toolbuilder_WAR_toolbuilderportlet_";
+//	private final String NAMESPACE = "_toolimplementation_WAR_toolBuilderportlet_";
 	private final static String TOOL_INSTANCE_FORM = ":toolInstanceForm:";
-	private final static String XPATH_TOOL_INSTANCE_NAME = "//*[substring-after(@id, '" + TOOL_INSTANCE_FORM +  "') = 'toolInstanceNameFieldSet:toolInstanceName']";
+	private final static String XPATH_TOOL_INSTANCE_NAME = "//*[substring-after(@id, '" + TOOL_INSTANCE_FORM +  "') = 'toolInstanceName']";
 	private final static String XPATH_CREATE_TOOL_INSTANCE_BUTTON = "//*[substring-after(@id, '" + TOOL_INSTANCE_FORM +  "') = 'createToolInstanceButton']";
 	private final static String XPATH_CANCEL_TOOL_INSTANCE_BUTTON = "//*[substring-after(@id, '" + TOOL_INSTANCE_FORM +  "') = 'cancelToolInstanceButton']";
 

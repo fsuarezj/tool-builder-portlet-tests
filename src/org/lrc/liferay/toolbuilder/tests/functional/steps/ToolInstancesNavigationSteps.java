@@ -31,7 +31,7 @@ public class ToolInstancesNavigationSteps {
 	
 	@Given("^(?:she|he|the user) is on Tool Instances Navigation Page$")
 	public void setup() {
-		this.driver.get(homeURL);
+		this.driver.navigate().to(homeURL);
 	}
 	
 	@Given("^(?:she|he|the user) creates a tool instance called ([^\"]*)$")

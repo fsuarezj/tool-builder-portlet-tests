@@ -1,6 +1,7 @@
 package org.lrc.liferay.toolbuilder.tests.functional.utils;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -10,7 +11,8 @@ public class DriverFactory {
 	
 	protected static WebDriver driver;
 	private static final boolean HEADLESS = false;
-	private static final String BROWSER = "firefox";
+	private static final String BROWSER = "chrome";
+	private static final String SELENIUM_DIR = "/home/ferda/informatica/development/qa/selenium/lib/";
 	
 	public DriverFactory() {
 		this(HEADLESS, BROWSER);
@@ -38,14 +40,15 @@ public class DriverFactory {
 			firefoxBinary.setEnvironmentProperty("DISPLAY", Xport);
 			driver = new FirefoxDriver(firefoxBinary, seleniumProfile);
 		} else {
-			System.out.println("Va a crear el FirefoxDriver");
+			System.setProperty("webdriver.gecko.driver", SELENIUM_DIR + "geckodriver/geckodriver");
 			driver = new FirefoxDriver(seleniumProfile);
-			System.out.println("Creado");
 		}
 	}
 	
 	private void createNewChromeInstance(boolean headLess) {
-		System.out.println("Chrome WebDriver not configured");
+		System.setProperty("webdriver.chrome.driver", SELENIUM_DIR + "chromedriver/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 	
 	public WebDriver getDriver() {

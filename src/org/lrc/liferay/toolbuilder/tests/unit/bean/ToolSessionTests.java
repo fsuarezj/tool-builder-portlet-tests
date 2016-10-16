@@ -14,6 +14,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+import org.lrc.liferay.toolbuilder.ToolInstance;
 import org.lrc.liferay.toolbuilder.bean.ToolSession;
 import org.omg.CORBA.SystemException;
 import org.powermock.api.mockito.PowerMockito;
