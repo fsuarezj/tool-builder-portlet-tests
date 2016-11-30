@@ -2,7 +2,6 @@ package org.lrc.liferay.toolbuilder.tests.functional.steps;
 
 import org.lrc.liferay.toolbuilder.tests.functional.pages.ToolInstanceCommonPage;
 import org.lrc.liferay.toolbuilder.tests.functional.utils.DriverFactory;
-import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -10,10 +9,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class ToolInstanceCommonSteps {
+public class ToolInstanceCommonSteps extends AbstractStepClass {
 
-	private WebDriver driver;
-	
 	@Before
 	public void beforeScenario() {
 		this.driver = new DriverFactory().getDriver();
@@ -23,7 +20,7 @@ public class ToolInstanceCommonSteps {
 	public void afterScenario() {
 		new DriverFactory().destroyDriver();
 	}
-	
+
 	@When("^(?:she|he|the user) logs in the system as ([^\"]*) with password ([^\"]*)$")
 	public void logIn(String login, String passwd) {
 //		new ToolInstanceCommonPage(this.driver).deleteToolInstance();
@@ -31,6 +28,12 @@ public class ToolInstanceCommonSteps {
 		new ToolInstanceCommonPage(driver).fillLogin(login, passwd);
 	}
 	
+	@When("^(?:she|he|the user) logs out$")
+	public void logOut() {
+//		new ToolInstanceCommonPage(this.driver).deleteToolInstance();
+		new ToolInstanceCommonPage(driver).clickLogOut();
+	}
+
 	@When("^(?:she|he|the user) deletes the current tool instance$")
 	public void deleteToolInstance() {
 //		new ToolInstanceCommonPage(this.driver).deleteToolInstance();
@@ -54,7 +57,7 @@ public class ToolInstanceCommonSteps {
 		new ToolInstanceCommonPage(driver).exitToolInstance();
 	}
 	
-	@Then("^an error message with text \"([^\"]*)\" is shown")
+	@Then("^an error message with text \"(.*)\" is shown")
 	public void errorMessageIs(String errorMessage) {
 		new ToolInstanceCommonPage(driver).errorMessageIs(errorMessage);
 	}

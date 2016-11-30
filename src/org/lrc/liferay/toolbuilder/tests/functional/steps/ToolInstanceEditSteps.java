@@ -2,15 +2,12 @@ package org.lrc.liferay.toolbuilder.tests.functional.steps;
 
 import org.lrc.liferay.toolbuilder.tests.functional.pages.ToolInstanceEditPage;
 import org.lrc.liferay.toolbuilder.tests.functional.utils.DriverFactory;
-import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 
-public class ToolInstanceEditSteps {
-
-	private WebDriver driver;
+public class ToolInstanceEditSteps extends AbstractStepClass {
 	
 	@Before
 	public void beforeScenario() {
@@ -21,7 +18,7 @@ public class ToolInstanceEditSteps {
 	public void afterScenario() {
 		new DriverFactory().destroyDriver();
 	}
-	
+
 	@And("^(?:she|he|the user) provides the tool instance name as ([^\"]*)$")
 	public void newToolInstanceName(String toolInstanceName) throws InterruptedException {
 //		new ToolInstanceEditPage(this.driver).newToolInstanceName(toolInstanceName);

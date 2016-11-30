@@ -17,11 +17,13 @@ public class ToolInstancesNavigationPage extends AbstractPage {
 	private final static String XPATH_TOOL_INSTANCES_LIST = "//*[contains(@id, '" + TOOL_INSTANCES_LIST + ":')]";
 	private final static String XPATH_TOOL_INSTANCES_LIST_TABLE = "//*[substring-after(@id, '" + TOOL_INSTANCES_LIST + ":') = 'toolInstancesListTable']";
 	private final static String XPATH_TOOL_INSTANCES_EMPTY = "//*[substring-after(@id, '" + TOOL_INSTANCES_LIST + ":') = 'toolInstancesEmpty']";
+	private final static String XPATH_TOOL_DEF_NAME = "//*[contains(@id, 'toolDefName')]";
 
 	@FindBy(xpath = XPATH_NEW_TOOL_INSTANCE_BUTTON) private WebElement newToolInstanceButton;
 	@FindBy(xpath = XPATH_TOOL_INSTANCES_LIST) private WebElement toolInstancesList;
 	@FindBy(xpath = XPATH_TOOL_INSTANCES_LIST_TABLE) private WebElement toolInstancesListTable;
 	@FindBy(xpath = XPATH_TOOL_INSTANCES_EMPTY) private WebElement toolInstancesEmpty;
+	@FindBy(xpath = XPATH_TOOL_DEF_NAME) private WebElement toolDefName;
 
 	public ToolInstancesNavigationPage(WebDriver driver) {
 		super(driver);
@@ -132,5 +134,10 @@ public class ToolInstancesNavigationPage extends AbstractPage {
 			}
 		}
 		return -1;
+	}
+
+	public Object getToolDefName() {
+		System.out.println("toolDefName es " + this.toolDefName.getText());
+		return this.toolDefName.getText();
 	}
 }

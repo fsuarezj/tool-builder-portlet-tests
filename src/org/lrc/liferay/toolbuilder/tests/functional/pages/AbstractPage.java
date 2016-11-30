@@ -1,6 +1,8 @@
 package org.lrc.liferay.toolbuilder.tests.functional.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,13 +20,18 @@ public abstract class AbstractPage {
 	private final static String XPATH_LOGIN_INPUT = XPATH_LOGIN_FORM + "//*[contains(@id, '_58_login')]";
 	private final static String XPATH_PASSWD_INPUT = XPATH_LOGIN_FORM + "//*[contains(@id, '_58_password')]";
 	private final static String XPATH_LOGIN_BUTTON = XPATH_LOGIN_FORM + "//*[contains(@class, 'btn')]";
+	private final static String XPATH_AVATAR_BUTTON = "//li[contains(@class, 'user-avatar')]";
+	private final static String XPATH_LOGOUT_BUTTON = "//li[contains(@class, 'sign-out')]";
+	private final static String XPATH_ERROR_MESSAGE = "//div[contains(@class, 'ui-message-error')]";
 
 //	@FindBy(xpath = XPATH_ALERT_MESSAGE) protected WebElement errorMessage;
-	@FindBy(how = How.CLASS_NAME, using = "portlet-msg-error") private WebElement errorMessage;
 	@FindBy(how = How.CLASS_NAME, using = "sign-in") private WebElement loginBegin;
+	@FindBy(xpath = XPATH_ERROR_MESSAGE) private WebElement errorMessage;
 	@FindBy(xpath = XPATH_LOGIN_INPUT) protected WebElement loginInput;
 	@FindBy(xpath = XPATH_PASSWD_INPUT) protected WebElement passwdInput;
 	@FindBy(xpath = XPATH_LOGIN_BUTTON) protected WebElement loginButton;
+	@FindBy(xpath = XPATH_AVATAR_BUTTON) protected WebElement avatarButton;
+	@FindBy(xpath = XPATH_LOGOUT_BUTTON) protected WebElement logoutButton;
 
 	private final static int TIMEOUT = 30;
 	protected WebDriver driver;
@@ -50,27 +57,32 @@ public abstract class AbstractPage {
 //	}
 //	
 	protected void clearAndSetText(WebElement element, String text) {
-		System.out.println("Creating Actions");
 		Actions navigator = new Actions(driver);
-		System.out.println("Click");
 		navigator.click(element);
-		System.out.println("Key End");
 		navigator.sendKeys(Keys.END);
-		System.out.println("Push Shift");
 		navigator.keyDown(Keys.SHIFT);
-		System.out.println("Key Home");
 		navigator.sendKeys(Keys.HOME);
-		System.out.println("Pull Shift");
 		navigator.keyUp(Keys.SHIFT);
-		System.out.println("Key back_space");
 		navigator.sendKeys(Keys.BACK_SPACE);
-		System.out.println("Keys text");
 		navigator.sendKeys(text);
-		System.out.println("Perform");
 		navigator.perform();
+	}
+	
+	protected boolean isElementPresent(By locatorKey) {
+		try {
+			this.driver.findElement(locatorKey);
+			return true;
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
+
+	protected boolean isElementVisible(String cssLocator) {
+		return driver.findElement(By.cssSelector(cssLocator)).isDisplayed();
 	}
 
 	public boolean errorMessageIs(String errorMessage) {
+		System.out.println("El error message es: " + errorMessage);
 		return this.errorMessage.getText().equals(errorMessage);
 	}
 
@@ -78,12 +90,15 @@ public abstract class AbstractPage {
 		this.loginBegin.click();
 	}
 	
+	public void clickLogOut() {
+		Actions action = new Actions(this.driver);
+		action.click(this.avatarButton);
+		action.click(this.logoutButton).build().perform();;
+	}
+	
 	public void fillLogin(String login, String passwd) {
-		System.out.println("Trying to clear and set text of login");
 		this.clearAndSetText(loginInput, login);
-		System.out.println("Trying to clear and set text of passwd");
 		this.clearAndSetText(passwdInput, passwd);
-		System.out.println("Trying to click login button");
 		this.loginButton.click();
 	}
 }
