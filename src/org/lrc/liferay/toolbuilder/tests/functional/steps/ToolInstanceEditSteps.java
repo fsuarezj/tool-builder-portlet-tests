@@ -21,7 +21,6 @@ public class ToolInstanceEditSteps extends AbstractStepClass {
 
 	@And("^(?:she|he|the user) provides the tool instance name as ([^\"]*)$")
 	public void newToolInstanceName(String toolInstanceName) throws InterruptedException {
-//		new ToolInstanceEditPage(this.driver).newToolInstanceName(toolInstanceName);
 		new ToolInstanceEditPage(driver).newToolInstanceName(toolInstanceName);
 	}
 	
