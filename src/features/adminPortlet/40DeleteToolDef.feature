@@ -1,5 +1,5 @@
 @tool-definition-portlet @DeleteToolDef
-Feature: Tool Definition Management
+Feature: Delete Tool Definition
 	As the admin user
 	I want to edit existing Tool Definitions in the system
 	So that I can choose them as the system Tool Definition

@@ -1,5 +1,5 @@
 @tool-definition-portlet @CreateToolDef
-Feature: Tool Definition Management
+Feature: Create Tool Definition
 	As the admin user
 	I want to create new Tool Definitions in the system
 	So that I can choose them as the system Tool Definition

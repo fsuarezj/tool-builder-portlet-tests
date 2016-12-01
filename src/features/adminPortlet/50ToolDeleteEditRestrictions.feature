@@ -1,5 +1,5 @@
 @tool-definition-portlet @DeleteEditToolDefRestrictions
-Feature: Tool Definition Management
+Feature: Delete and Edit Management
 	As the admin user
 	I don't want to edit or delete a Tool Definition selected or with exisiting tool instances
 	So the system should avoid it
